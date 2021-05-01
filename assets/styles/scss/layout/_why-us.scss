@@ -1,0 +1,20 @@
+.why-us {
+    background-color: $Light-Grayish-Blue;
+    .why-us-container {
+        @include wide-container;
+        text-align: center;
+        padding: 4rem 0 3.25rem;
+        .why-us-list {
+            margin-top: 3.5rem;
+            li {
+                margin-bottom: 2rem;
+                svg {
+                    margin-bottom: 1.5rem;
+                }
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

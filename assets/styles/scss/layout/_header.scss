@@ -1,0 +1,10 @@
+header {
+    padding: 1rem 0;
+    background-color: $White;
+    position: relative;
+    z-index: 1;
+    .header-container {
+        @include space-between;
+        @include wide-container;
+    }
+}

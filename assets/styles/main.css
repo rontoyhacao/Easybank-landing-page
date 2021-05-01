@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Public Sans', sans-serif;
+}
+
+p {
+  line-height: 1.5;
+  color: #9698a6;
+  margin: 1rem 0;
+}
+
+span {
+  color: #9698a6;
+}
+
+h1, h2, h3 {
+  color: #2d314d;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2.45rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+footer .footer-grid__social a {
+  color: #f3f4f6;
+  font-size: 1.5rem;
+}
+
+footer .footer-grid__nav a {
+  color: #f3f4f6;
+}
+
+header {
+  padding: 1rem 0;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+
+header .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 88%;
+  margin: 0 auto;
+  max-width: 69rem;
+}
+
+.cta {
+  background-color: white;
+}
+
+.cta .hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.cta .hero-container__illustration {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  background: url(/assets/images/bg-intro-mobile.svg) no-repeat;
+  background-size: cover;
+  margin-top: -3.5rem;
+}
+
+.cta .hero-container__illustration img {
+  max-width: 100%;
+  height: auto;
+  width: 88%;
+  margin: 0 auto;
+  max-width: 69rem;
+  margin-top: -3rem;
+}
+
+.cta .hero-container__cta {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  width: 88%;
+  margin: 0 auto;
+  max-width: 69rem;
+  padding: 1.5rem 0 5.5rem;
+}
+
+.why-us {
+  background-color: #f3f4f6;
+}
+
+.why-us .why-us-container {
+  width: 88%;
+  margin: 0 auto;
+  max-width: 69rem;
+  text-align: center;
+  padding: 4rem 0 3.25rem;
+}
+
+.why-us .why-us-container .why-us-list {
+  margin-top: 3.5rem;
+}
+
+.why-us .why-us-container .why-us-list li {
+  margin-bottom: 2rem;
+}
+
+.why-us .why-us-container .why-us-list li svg {
+  margin-bottom: 1.5rem;
+}
+
+.why-us .why-us-container .why-us-list li:last-of-type {
+  margin-bottom: 0;
+}
+
+.articles {
+  background-color: #fafafa;
+}
+
+.articles .articles-container {
+  width: 88%;
+  margin: 0 auto;
+  max-width: 69rem;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.articles .articles-container .articles-list {
+  margin: 2rem 0;
+}
+
+.articles .articles-container .articles-list li {
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  background-color: #2d314d;
+  padding: 2.5rem 0;
+}
+
+footer .footer-grid {
+  width: 88%;
+  margin: 0 auto;
+  max-width: 69rem;
+  text-align: center;
+}
+
+footer .footer-grid__social .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 0;
+}
+
+footer .footer-grid__social .social-links li {
+  margin: 0 .5rem;
+}
+
+footer .footer-grid__nav .footer-nav {
+  margin: 2rem 0;
+}
+
+footer .footer-grid__nav .footer-nav li {
+  margin: 1.25rem 0;
+}
+
+footer .footer-grid__cta span {
+  display: block;
+  margin-top: 2rem;
+}
+
+.hamburger {
+  border: none;
+  background: url(/assets/images/icon-hamburger.svg) no-repeat center;
+  height: 2rem;
+  width: 2rem;
+}
+
+.cta-button {
+  padding: .8em 2em;
+  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  border-radius: 2em;
+  color: white;
+  display: inline-block;
+}
+
+.article-card {
+  background-color: white;
+  text-align: initial;
+  border-radius: .5rem;
+  overflow: hidden;
+  max-width: 35rem;
+}
+
+.article-card .article-image {
+  height: 12rem;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.article-card .article-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.article-card__content {
+  padding: 2rem;
+}
+
+.article-card__content span {
+  font-size: 0.75rem;
+}
+
+.article-card__content h3 {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.article-card__content h3 a {
+  color: #2d314d;
+}
+
+.article-card__content p {
+  font-size: 0.875rem;
+}
+/*# sourceMappingURL=main.css.map */

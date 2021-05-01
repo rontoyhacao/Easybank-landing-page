@@ -1,0 +1,25 @@
+.cta {
+    background-color: $White;
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        &__illustration {
+            order: 1;
+            background: url(/assets/images/bg-intro-mobile.svg) no-repeat;
+            background-size: cover;
+            margin-top: -3.5rem;
+            img {
+                max-width: 100%;
+                height: auto;
+                @include wide-container;
+                margin-top: -3rem;
+            }
+        }
+        &__cta {
+            order: 2;
+            @include wide-container;
+            padding: 1.5rem 0 5.5rem;
+        }
+    }
+}

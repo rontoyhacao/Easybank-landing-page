@@ -1,0 +1,14 @@
+.articles {
+    background-color: $Very-Light-Gray;
+    .articles-container {
+        @include wide-container;
+        text-align: center;
+        padding: 5rem 0;
+        .articles-list {
+            margin: 2rem 0;
+            li {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+}

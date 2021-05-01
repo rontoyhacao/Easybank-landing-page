@@ -1,0 +1,33 @@
+.article-card {
+    background-color: $White;
+    text-align: initial;
+    border-radius: .5rem;
+    overflow: hidden;
+    max-width: 35rem;
+    .article-image {
+        height: 12rem;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    &__content {
+        padding: 2rem;
+        span {
+            font-size: 0.75rem;
+        }
+        h3 {
+            font-size: 1rem;
+            margin-top: 1rem;
+            a {
+                color: $Dark-Blue;
+            }
+        }
+        p {
+            font-size: 0.875rem;
+        }
+    }
+}

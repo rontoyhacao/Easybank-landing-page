@@ -1,0 +1,29 @@
+footer {
+    background-color: $Dark-Blue;
+    padding: 2.5rem 0;
+    .footer-grid {
+        @include wide-container;
+        text-align: center;
+        &__social {
+            .social-links {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 2rem 0;
+                li {
+                    margin: 0 .5rem;
+                }
+            }
+        }
+        &__nav .footer-nav {
+            margin: 2rem 0;
+            li {
+                margin: 1.25rem 0;
+            }
+        }
+        &__cta span {
+            display: block;
+            margin-top: 2rem;
+        }
+    }
+}
