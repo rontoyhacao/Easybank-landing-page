@@ -4,3 +4,31 @@
     height: 2rem;
     width: 2rem;
 }
+.open {
+    background: url(/assets/images/icon-close.svg) no-repeat center;
+}
+.nav-container {
+    position: absolute;
+    left: 0;
+    top: 4rem;
+    background-color: $White;
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+    border-radius: .5rem;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-1rem);
+    transition: .2s;
+    ul li {
+        margin-bottom: 1.5rem;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
