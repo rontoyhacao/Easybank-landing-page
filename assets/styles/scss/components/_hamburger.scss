@@ -3,6 +3,7 @@
     background: url(/assets/images/icon-hamburger.svg) no-repeat center;
     height: 2rem;
     width: 2rem;
+    cursor: pointer;
 }
 .open {
     background: url(/assets/images/icon-close.svg) no-repeat center;
@@ -18,7 +19,7 @@
     border-radius: .5rem;
     visibility: hidden;
     opacity: 0;
-    transform: translateY(-1rem);
+    transform: translateY(-2rem);
     transition: .2s;
     ul li {
         margin-bottom: 1.5rem;

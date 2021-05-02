@@ -4,6 +4,7 @@
     border-radius: .5rem;
     overflow: hidden;
     max-width: 35rem;
+    height: 100%;
     .article-image {
         height: 12rem;
         overflow: hidden;
@@ -11,7 +12,7 @@
         align-items: center;
         img {
             max-width: 100%;
-            height: auto;
+            object-fit: cover;
         }
     }
     &__content {
@@ -21,13 +22,15 @@
         }
         h3 {
             font-size: 1rem;
-            margin-top: 1rem;
+            margin-top: .5rem;
             a {
                 color: $Dark-Blue;
             }
         }
         p {
             font-size: 0.875rem;
+            line-height: initial;
+            margin: .5rem 0 0 0;
         }
     }
 }

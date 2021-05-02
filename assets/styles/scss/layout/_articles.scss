@@ -12,3 +12,17 @@
         }
     }
 }
+
+@media screen and (min-width: 37.5em) {
+    .articles-container {
+        text-align: initial !important;
+        .articles-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+            gap: 2rem;
+            li {
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+}
