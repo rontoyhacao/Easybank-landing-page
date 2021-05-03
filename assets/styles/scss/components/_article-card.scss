@@ -25,6 +25,9 @@
             margin-top: .5rem;
             a {
                 color: $Dark-Blue;
+                &:hover {
+                    color: $Lime-Green;
+                }
             }
         }
         p {

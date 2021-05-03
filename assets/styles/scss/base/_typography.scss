@@ -35,9 +35,15 @@ footer {
     .footer-grid__social a {
         color: $Light-Grayish-Blue;
         font-size: 1.5rem;
+        &:hover {
+            color: $Lime-Green;
+        }
     }
     .footer-grid__nav a {
         color: $Light-Grayish-Blue;
+        &:hover {
+            color: $Lime-Green;
+        }
     }
 }
 
