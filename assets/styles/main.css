@@ -91,6 +91,19 @@ footer .footer-grid__nav a {
   html {
     font-size: 16px;
   }
+  h1 {
+    font-size: 3.25rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  .nav-container a {
+    color: #9698a6;
+    font-size: 1rem;
+  }
 }
 
 header {
@@ -114,6 +127,16 @@ header .header-container {
   margin: 0 auto;
   max-width: 69rem;
   position: relative;
+}
+
+header .header-container .cta-button {
+  display: none;
+}
+
+@media screen and (min-width: 64em) {
+  .header-container .cta-button {
+    display: initial !important;
+  }
 }
 
 .cta {
@@ -184,8 +207,8 @@ header .header-container {
     left: 0;
     height: auto !important;
     width: auto !important;
-    -webkit-transform: translateX(8rem);
-            transform: translateX(8rem);
+    -webkit-transform: translateX(12rem);
+            transform: translateX(12rem);
   }
 }
 
@@ -404,6 +427,30 @@ footer .footer-grid__cta span {
   visibility: visible;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+@media screen and (min-width: 64em) {
+  .hamburger {
+    display: none;
+  }
+  .nav-container {
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    top: initial;
+    background-color: transparent;
+    padding: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .nav-container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav-container ul li {
+    margin: 0 1rem;
+  }
 }
 
 .cta-button {

@@ -7,5 +7,13 @@ header {
         @include space-between;
         @include wide-container;
         position: relative;
+        .cta-button {
+            display: none;
+        }
+    }
+}
+@media screen and (min-width: 64em) {
+    .header-container .cta-button {
+        display: initial !important;
     }
 }

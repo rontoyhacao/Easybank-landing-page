@@ -33,3 +33,23 @@
     visibility: visible;
     transform: translateY(0);
 }
+@media screen and (min-width: 64em) {
+    .hamburger {
+        display: none;
+    }
+    .nav-container {
+        visibility: visible;
+        opacity: 1;
+        position: relative;
+        top: initial;
+        background-color: transparent;
+        padding: 0;
+        transform: none;
+        ul {
+            display: flex;
+            li {
+                margin: 0 1rem;
+            }
+        }
+    }
+}
