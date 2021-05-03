@@ -22,6 +22,7 @@
 @media screen and (min-width: 37.5em) {
     .why-us-container {
         text-align: initial !important;
+        padding-top: 8rem !important;
         .why-us-list {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));

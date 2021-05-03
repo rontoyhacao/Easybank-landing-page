@@ -27,6 +27,7 @@ time, mark, audio, video {
 
 body {
   line-height: 1;
+  overflow-x: hidden;
 }
 
 ol, ul {
@@ -35,6 +36,10 @@ ol, ul {
 
 a {
   text-decoration: none;
+}
+
+html {
+  font-size: 14.08px;
 }
 
 body {
@@ -82,6 +87,12 @@ footer .footer-grid__nav a {
   color: #f3f4f6;
 }
 
+@media screen and (min-width: 64em) {
+  html {
+    font-size: 16px;
+  }
+}
+
 header {
   padding: 1rem 0;
   background-color: white;
@@ -106,7 +117,7 @@ header .header-container {
 }
 
 .cta {
-  background-color: white;
+  background-color: #fafafa;
 }
 
 .cta .hero-container {
@@ -114,16 +125,13 @@ header .header-container {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   text-align: center;
 }
 
 .cta .hero-container__illustration {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
   background: url(/assets/images/bg-intro-mobile.svg) no-repeat;
   background-size: cover;
   margin-top: -3.5rem;
@@ -139,13 +147,46 @@ header .header-container {
 }
 
 .cta .hero-container__cta {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
   width: 88%;
   margin: 0 auto;
   max-width: 69rem;
   padding: 1.5rem 0 5.5rem;
+}
+
+@media screen and (min-width: 64em) {
+  .hero-container {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    width: 88%;
+    margin: 0 auto;
+    max-width: 69rem;
+    text-align: initial !important;
+  }
+  .hero-container__cta {
+    width: 40% !important;
+    padding: 13rem 0 !important;
+  }
+  .hero-container__illustration {
+    background: none !important;
+    width: 60%;
+    position: relative;
+  }
+  .hero-container__illustration::before {
+    content: url(/assets/images/bg-intro-desktop.svg);
+    position: absolute;
+    left: 0;
+    top: -15rem;
+  }
+  .hero-container__illustration img {
+    position: absolute;
+    left: 0;
+    height: auto !important;
+    width: auto !important;
+    -webkit-transform: translateX(8rem);
+            transform: translateX(8rem);
+  }
 }
 
 .why-us {
@@ -179,6 +220,7 @@ header .header-container {
 @media screen and (min-width: 37.5em) {
   .why-us-container {
     text-align: initial !important;
+    padding-top: 8rem !important;
   }
   .why-us-container .why-us-list {
     display: -ms-grid;
